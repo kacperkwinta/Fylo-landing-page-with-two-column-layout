@@ -1,16 +1,64 @@
 .section {
 	@include flex(center, center);
-    flex-wrap: wrap-reverse;
-    gap: 2.4rem;
+	flex-wrap: wrap-reverse;
+	gap: 4.8rem;
 
 	padding: 6.4rem;
 
 	&__text {
-        max-width: 65rem;
+		max-width: 65rem;
 	}
 
 	&__img {
 		display: block;
 		width: 45%;
+	}
+}
+
+.section-feature {
+	flex-wrap: wrap;
+
+	.feature-link {
+		color: $color-accent-2;
+		display: inline-block;
+		text-decoration: none;
+		border-bottom: 1px solid $color-accent-2;
+		transition: all 0.2s ease;
+
+		&:hover {
+			opacity: 0.8;
+		}
+	}
+
+	.feature-testimonial {
+        max-width: 45rem;
+		padding: 2.4rem 3.2rem;
+		border-radius: 4px;
+		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+		color: $color-primary-1;
+
+		.testimonial-profile-wrapper {
+			@include flex(flex-start, center);
+			gap: 1.2rem;
+
+			.profile-img {
+				width: 4.8rem;
+				height: 4.8rem;
+				border-radius: 50%;
+				display: block;
+			}
+
+			.profile-name {
+				font-family: "Raleway", sans-serif;
+                font-weight: 700;
+				color: $color-primary-1;
+				font-size: 1.5rem;
+				margin-bottom: 0.2rem;
+			}
+
+			.profile-role {
+				font-size: 1.1rem;
+			}
+		}
 	}
 }

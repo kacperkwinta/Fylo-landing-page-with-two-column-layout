@@ -16,7 +16,8 @@ body {
 h1,
 h2,
 h3 {
-  font-family: "Raleway", sans-serif; }
+  font-family: "Raleway", sans-serif;
+  color: #070439; }
 
 .header-1 {
   font-size: 4.4rem; }
@@ -35,6 +36,12 @@ h3 {
 
 .mb-m {
   margin-bottom: 2.4rem; }
+
+.mb-l {
+  margin-bottom: 3.2rem; }
+
+.mb-xxxl {
+  margin-bottom: 12.6rem; }
 
 .btn {
   display: inline-block;
@@ -70,13 +77,48 @@ h3 {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap-reverse;
-  gap: 2.4rem;
+  gap: 4.8rem;
   padding: 6.4rem; }
   .section__text {
     max-width: 65rem; }
   .section__img {
     display: block;
     width: 45%; }
+
+.section-feature {
+  flex-wrap: wrap; }
+  .section-feature .feature-link {
+    color: #3c9f8f;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid #3c9f8f;
+    transition: all 0.2s ease; }
+    .section-feature .feature-link:hover {
+      opacity: 0.8; }
+  .section-feature .feature-testimonial {
+    max-width: 45rem;
+    padding: 2.4rem 3.2rem;
+    border-radius: 4px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    color: #070439; }
+    .section-feature .feature-testimonial .testimonial-profile-wrapper {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 1.2rem; }
+      .section-feature .feature-testimonial .testimonial-profile-wrapper .profile-img {
+        width: 4.8rem;
+        height: 4.8rem;
+        border-radius: 50%;
+        display: block; }
+      .section-feature .feature-testimonial .testimonial-profile-wrapper .profile-name {
+        font-family: "Raleway", sans-serif;
+        font-weight: 700;
+        color: #070439;
+        font-size: 1.5rem;
+        margin-bottom: 0.2rem; }
+      .section-feature .feature-testimonial .testimonial-profile-wrapper .profile-role {
+        font-size: 1.1rem; }
 
 .header {
   padding: 6.4rem; }
