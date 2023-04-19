@@ -1,0 +1,13 @@
+*,
+*::after,
+*::before {
+	box-sizing: inherit;
+	padding: 0;
+	margin: 0;
+}
+
+html {
+	box-sizing: border-box;
+	font-size: 62.5%;
+	font-family: "Open Sans", sans-serif; // default style for body copy
+}

@@ -1,0 +1,28 @@
+// ### Headings, Call-to-actions, Header Navigation
+
+// - Family: [Raleway](https://fonts.google.com/specimen/Raleway)
+// - Weights: 400, 700
+
+// ### Body
+
+// - Family: [Open Sans](https://fonts.google.com/specimen/Open+Sans)
+// - Weights: 400
+
+// font-family: 'Open Sans', sans-serif;
+// font-family: 'Raleway', sans-serif;
+
+// FONT SIZE SYSTEM (px)
+// 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+
+body {
+	font-size: 1.8rem;
+}
+
+.header-1 {
+	font-family: "Raleway", sans-serif;
+	font-size: 4.4rem;
+}
+
+.paragraph {
+	line-height: 1.5;
+}

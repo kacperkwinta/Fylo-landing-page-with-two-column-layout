@@ -1,0 +1,13 @@
+.section {
+	@include flex(center, center);
+	padding: 6.4rem;
+
+	&__text {
+        max-width: 65rem;
+	}
+
+	&__img {
+		display: block;
+		width: 40%;
+	}
+}
