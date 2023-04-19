@@ -31,7 +31,7 @@
 	}
 
 	.feature-testimonial {
-        max-width: 45rem;
+		max-width: 45rem;
 		padding: 2.4rem 3.2rem;
 		border-radius: 4px;
 		box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
@@ -50,7 +50,7 @@
 
 			.profile-name {
 				font-family: "Raleway", sans-serif;
-                font-weight: 700;
+				font-weight: 700;
 				color: $color-primary-1;
 				font-size: 1.5rem;
 				margin-bottom: 0.2rem;
@@ -59,6 +59,27 @@
 			.profile-role {
 				font-size: 1.1rem;
 			}
+		}
+	}
+}
+
+.section-get-started {
+    gap: 9.6rem;
+    flex-wrap: wrap;
+
+	background-color: $color-primary-2;
+
+	.form {
+		@include flex(flex-start, flex-start);
+		flex-direction: column;
+
+		.form__input {
+			width: 45rem;
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+		}
+
+		.btn {
+			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 		}
 	}
 }
