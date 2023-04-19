@@ -1,0 +1,50 @@
+.footer {
+	padding: 9.6rem;
+	background-color: $color-primary-1;
+}
+
+.footer-wrapper {
+	@include flex(space-between, flex-start);
+	gap: 12.6rem;
+	flex-wrap: wrap;
+}
+
+.footer__link {
+	@include flex(center, center);
+	gap: 1.2rem;
+
+	&:not(:last-child) {
+		margin-bottom: 1.2rem;
+	}
+
+	&:link,
+	&:visited {
+		text-decoration: none;
+		color: $color-neutral-1;
+		font-size: 1.4rem;
+		transition: all 0.2s ease;
+	}
+
+	&:hover,
+	&:active {
+		color: $color-primary-2;
+	}
+}
+
+.links-group {
+	width: max-content;
+
+	@include flex(flex-start, flex-start);
+	flex-direction: column;
+}
+
+.links-group--social {
+	align-self: start;
+	@include flex(center, center);
+	gap: 2.4rem;
+
+	.footer__link {
+		margin-bottom: 0;
+		font-size: 1.8rem;
+	}
+}
