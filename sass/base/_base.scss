@@ -11,3 +11,9 @@ html {
 	font-size: 62.5%;
 	font-family: "Open Sans", sans-serif; // default style for body copy
 }
+
+@media only screen and (max-width: $bp-large) {
+	html {
+		font-size: 50%;
+	}
+}

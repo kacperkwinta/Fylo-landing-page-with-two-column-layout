@@ -1,14 +1,31 @@
 .header {
 	padding: 6.4rem;
+	animation: fadeInToBottom 1.7s cubic-bezier(0.16, 1, 0.3, 1);
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 3.2rem;
+	}
 }
 
 .nav {
 	@include flex(space-between, center);
 }
 
+.logo {
+	width: 12.6rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		width: 9.6rem;
+	}
+}
+
 .nav-wrapper {
 	@include flex(center, center);
 	gap: 4.8rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		gap: 1.2rem;
+	}
 }
 
 .nav__link {

@@ -2,29 +2,51 @@
 	@include flex(center, center);
 	flex-wrap: wrap-reverse;
 	gap: 4.8rem;
-
 	padding: 6.4rem;
+
+	@media only screen and (max-width: $bp-medium) {
+		padding: 3.2rem;
+	}
 
 	&__text {
 		max-width: 65rem;
+
+		@media only screen and (max-width: $bp-largest) {
+			text-align: center;
+		}
 	}
 
 	&__img {
 		display: block;
 		width: 45%;
 	}
+
+	@media only screen and (max-width: $bp-largest) {
+		&__img {
+			width: 50%;
+		}
+	}
 }
 
 .section-cta {
-    background-image: url(/images/bg-curve-desktop.svg);
-    background-repeat: no-repeat no-repeat;
-    background-size: contain;
-    background-position: bottom;
+	background-image: url(/images/bg-curve-desktop.svg);
+	background-repeat: no-repeat no-repeat;
+	background-size: contain;
+	background-position: bottom;
+
+	animation: fadeInToTop 2s cubic-bezier(0.16, 1, 0.3, 1);
+
+	.btn {
+		@media only screen and (max-width: $bp-medium) {
+			width: 75%;
+		}
+	}
 }
 
 .section-feature {
+	padding-top: 9.6rem;
 	flex-wrap: wrap;
-    background-color: #F9F8FE;
+	background-color: #f9f8fe;
 
 	.feature-link {
 		color: $color-accent-2;
@@ -72,10 +94,15 @@
 }
 
 .section-get-started {
-    gap: 9.6rem;
-    flex-wrap: wrap;
+	gap: 9.6rem;
+	flex-wrap: wrap;
 
 	background-color: $color-primary-2;
+
+	@media only screen and (max-width: $bp-largest) {
+		text-align: center;
+		gap: 4.8rem !important;
+	}
 
 	.form {
 		@include flex(flex-start, flex-start);
@@ -84,6 +111,10 @@
 		.form__input {
 			width: 45rem;
 			box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+
+			@media only screen and (max-width: $bp-largest) {
+				width: 100%;
+			}
 		}
 
 		.btn {
