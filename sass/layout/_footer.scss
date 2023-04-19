@@ -4,8 +4,8 @@
 }
 
 .footer-wrapper {
-	@include flex(space-between, flex-start);
-	gap: 12.6rem;
+	@include flex(space-around, flex-start);
+	gap: 6.4rem;
 	flex-wrap: wrap;
 }
 

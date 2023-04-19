@@ -15,8 +15,16 @@
 	}
 }
 
+.section-cta {
+    background-image: url(/images/bg-curve-desktop.svg);
+    background-repeat: no-repeat no-repeat;
+    background-size: contain;
+    background-position: bottom;
+}
+
 .section-feature {
 	flex-wrap: wrap;
+    background-color: #F9F8FE;
 
 	.feature-link {
 		color: $color-accent-2;
