@@ -13,23 +13,70 @@ html {
 body {
   font-size: 1.8rem; }
 
+h1,
+h2,
+h3 {
+  font-family: "Raleway", sans-serif; }
+
 .header-1 {
-  font-family: "Raleway", sans-serif;
   font-size: 4.4rem; }
+
+.header-2 {
+  font-size: 4rem; }
+
+.header-3 {
+  font-size: 3.6rem; }
 
 .paragraph {
   line-height: 1.5; }
+
+.mb-s {
+  margin-bottom: 1.2rem; }
+
+.mb-m {
+  margin-bottom: 2.4rem; }
+
+.btn {
+  display: inline-block;
+  background-color: #3065f8;
+  border: none;
+  border-radius: 4px;
+  padding: 1.2rem 4.8rem;
+  color: #f6f6fe;
+  font-family: inherit;
+  box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+  transition: all 0.2s ease; }
+  .btn:hover {
+    background-color: #4978f8;
+    cursor: pointer; }
+
+.form {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 2.4rem; }
+
+.form__input {
+  width: 50%;
+  padding: 1.2rem;
+  border: 1px solid #070439;
+  border-radius: 4px; }
+  .form__input::placeholder {
+    font-family: inherit;
+    color: #bfbfbf; }
 
 .section {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap-reverse;
+  gap: 2.4rem;
   padding: 6.4rem; }
   .section__text {
     max-width: 65rem; }
   .section__img {
     display: block;
-    width: 40%; }
+    width: 45%; }
 
 .header {
   padding: 6.4rem; }
